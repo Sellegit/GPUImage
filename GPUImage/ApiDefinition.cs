@@ -189,9 +189,9 @@ namespace GPUImage
 		[Export ("initWithMovieURL:size:fileType:outputSettings:")]
 		IntPtr Constructor (NSUrl newMovieUrl, SizeF newSize, NSString newFileType, NSDictionary outputSettings);
 
-		// - (void)setHasAudioTrack:(BOOL)hasAudioTrack audioSettings:(NSDictionary *)audioOutputSettings;
-		[Export ("setHasAudioTrack:audioSettings")]
-		void SetHasAudioTrack (bool hasAudioTrack, NSDictionary audioOutputSettings);
+//		// - (void)setHasAudioTrack:(BOOL)hasAudioTrack audioSettings:(NSDictionary *)audioOutputSettings;
+//		[Export ("setHasAudioTrack:audioSettings")]
+//		void SetHasAudioTrack (bool hasAudioTrack, NSDictionary audioOutputSettings);
 
 		// - (void)startRecording;
 		[Export ("startRecording")]
@@ -771,8 +771,8 @@ namespace GPUImage
 			[Export("inputFilterToIgnoreForUpdates")]
 			GPUImageFilter InputFilterToIgnoreForUpdates { get; set; }
 			
-			[Export("addFilter")]
-			void AddFilter(GPUImageFilter newFilter);
+//			[Export("addFilter")]
+//			void AddFilter(GPUImageFilter newFilter);
 			
 			[Export("filterAtIndex:")]
 			GPUImageFilter FilterAtIndex(uint filterIndex);
@@ -962,9 +962,9 @@ namespace GPUImage
 		{
 			[Export("cropRegion")]
 			RectangleF CropRegion { get; set; }
-			
-			[Export("initWithCropRegion")]
-			IntPtr InitWithCropRegion(RectangleF newCropRegion);
+//			
+//			[Export("initWithCropRegion")]
+//			IntPtr InitWithCropRegion(RectangleF newCropRegion);
 		}
 
 		[BaseType(typeof(GPUImageFilter))]
